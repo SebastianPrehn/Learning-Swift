@@ -75,3 +75,41 @@ let year: Int = 1989
 let height: Double = 1.78
 let taylorRocks: Bool = true
 
+
+// -- Booleans --
+
+// Booleans are a datatype used for logical programming, with the two states "true" and "false".
+
+// It can be set with an initial value either directly
+let goodDogs = true
+// or via a function, where the result will determine whether it is true or false
+let isMultiple = 120.isMultiple(of: 3)
+
+// You can also use ! to negate the result, or use toggle() to flip the result
+var gameOver = false
+print(gameOver)
+
+gameOver.toggle()
+print(gameOver)
+
+// -- Joining strings together
+
+// One can use + to add together strings
+let firstString = "Hello, "
+let secondString = "world!"
+let greeting = firstString + secondString
+print(greeting)
+
+// It also says something special: + is an operator which has multiple functions. This is called operator overloading
+// We can also use these principles to do some string interpolation. He delivered!
+let day2name = "Taylor"
+let day2age = 26
+let day2message = "Hello, my name is \(day2name) and I'm \(day2age) years old."
+print(day2message)
+
+
+// Recap of day 1 and 2
+// If you don’t intend to change a value, make sure you use let so that Swift can help you avoid mistakes.
+// You create strings by using double quotes at the start and end, but if you want your string to go over several lines you need to use three double quotes at the start and end.
+
+
